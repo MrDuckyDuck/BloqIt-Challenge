@@ -1,0 +1,6 @@
+- Create authentication middleware;
+- Create input sanitation middleware for open fields/string fields;
+- Setup shard on MongoDB to take advantage of the sharding key on Rent Model;
+- Create logic to force access on Rent table to be made with shard key, otherwise full table scans will occur;
+- Allow user to populate fields, if necessary, to pull the data from the other table. Equivalent to JOINS on SQL dbs.
+- ...

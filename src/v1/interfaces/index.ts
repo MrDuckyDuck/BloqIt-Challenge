@@ -1,0 +1,9 @@
+export * as CustomErrorInterface from "v1/interfaces/CustomErrorInterface";
+export * as BaseControllerInterface from "v1/interfaces/BaseControllerInterface";
+export * as BaseServiceInterface from "v1/interfaces/BaseServiceInterface";
+export * as BaseRepositoryInterface from "v1/interfaces/BaseRepositoryInterface";
+export * as DatabaseHandlerInterface from "v1/interfaces/DatabaseHandlerInterface";
+export * as IndexCounterInterface from "v1/interfaces/IndexCounterInterface";
+export * as BloqInterface from "v1/interfaces/BloqInterface";
+export * as LockerInterface from "v1/interfaces/LockerInterface";
+export * as RentInterface from "v1/interfaces/RentInterface";
