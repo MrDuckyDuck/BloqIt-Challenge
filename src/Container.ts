@@ -5,13 +5,12 @@ import { BaseRouter } from "v1/routes";
 import { Bloq, Locker, Rent } from "v1/models";
 
 import { AnotherMiddlewareDummy, MiddlewareDummy } from "v1/middlewares";
-import XptoService from "v1/services/XptoService";
 
 /**
  * Init Bloq Repo, Service, Controller and Router with all the necessary middlewares,
  */
 const BaseBloqRepository = new BaseRepository(Bloq);
-const BaseBloqService = new XptoService(BaseBloqRepository);
+const BaseBloqService = new BaseService(BaseBloqRepository);
 const BaseBloqContoller = new BaseController(BaseBloqService);
 const BaseBloqRouter = new BaseRouter("/v1/bloqs", BaseBloqContoller);
 BaseBloqRouter.withDefaultCreate();
